@@ -1,0 +1,17 @@
+.main {
+  position: relative; 
+  height: 680px;
+  width: 100%;
+  display: block;
+}
+
+
+
+
+#info {
+  font-size: 16px;
+  margin-right: 5px;
+  text-align: center;
+  padding-top: 15px;
+}
+
