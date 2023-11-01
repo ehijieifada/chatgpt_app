@@ -1,17 +1,29 @@
 .main {
   position: relative; 
-  height: 680px;
+  height: 700px;
   width: 100%;
   display: block;
 }
-
-
-
 
 #info {
   font-size: 16px;
   margin-right: 5px;
   text-align: center;
-  padding-top: 15px;
+  padding-top: 5px;
+}
+
+.main {
+  position: relative; 
+  height: 95vh;
+  width: 100%;
+  display: block;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 650px) {
+  .main{
+  height: 95vh;
+  
+  }
 }
 

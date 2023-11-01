@@ -11,7 +11,7 @@ const systemMessage = {
 function App() {
   const [messages, setMessages] = useState([
     {
-      message: "Hello, I'm here to help you!",
+      message: "Hi, I'm your assistant!",
       sentTime: "just now",
       sender: "ChatGPT"
     }
@@ -82,7 +82,7 @@ function App() {
           <ChatContainer>       
             <MessageList style={{ display: "block", background:"linear-gradient(90deg, rgba(46, 50, 49, 1) 0%, rgba(28, 36, 66, 1) 54%, rgba(28, 28, 30, 1) 100%)"  }} 
               scrollBehavior="smooth" 
-              typingIndicator={isTyping ? <TypingIndicator content="Your Response is here" /> : null}
+              typingIndicator={isTyping ? <TypingIndicator content="Processing your response" /> : null}
             >
               {messages.map((message, i) => {
                 console.log(message)
@@ -93,10 +93,6 @@ function App() {
           </ChatContainer>
         </MainContainer>
       </div>
-    
-      <div id="info">Chat GPT Oct 12 Version. Free Research Preview. Our goal is to make AI systems more natural and safe to interact with. Your feedback will help us improve
-      </div>
-
     </div>
   )
 }
